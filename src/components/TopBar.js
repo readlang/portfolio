@@ -3,10 +3,10 @@ import styled from "styled-components";
 const TitleBar = styled.div`
     height: 50px;
     max-width: 1200px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     background-color: hsl(0, 0%, 100%);
     font-size: 30px;
     font-weight: 700;
@@ -24,11 +24,11 @@ const Button = styled.button`
     cursor: pointer;
 `
 
-function TopBar() {
+function TopBar({showNav, setShowNav}) {
     return(
         <TitleBar>
             Read Langworthy
-            <Button>☰</Button>
+            <Button onClick={()=> showNav ? setShowNav(false) : setShowNav(true) } >☰</Button>
         </TitleBar>
     )
 }

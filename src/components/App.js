@@ -1,4 +1,5 @@
 import {Routes, Route} from "react-router-dom" 
+import { useState } from "react"
 import TopBar from './TopBar'
 import SideBar from './SideBar'
 import WebDev from './WebDev'
@@ -8,11 +9,13 @@ import Contact from './Contact'
 import { Canvas, Container, ContentArea } from "../styled"
 
 function App() {
+  const [showNav, setShowNav] =useState(true)
+
   return (
     <Canvas>
-      <TopBar />
+      <TopBar showNav={showNav} setShowNav={setShowNav} />
       <Container>
-        <SideBar />
+        <SideBar showNav={showNav} setShowNav={setShowNav} />
         <ContentArea>
           <Routes>
             <Route path="/" element={ <WebDev /> } />

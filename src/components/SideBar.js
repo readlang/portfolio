@@ -1,37 +1,62 @@
 import styled from "styled-components";
 import { Link, NavLink } from "react-router-dom";
 
-const Nav = styled.div`
+const Expander = styled.button`
     width: 200px;
+    height: 30px;
+    border: 0;
+    background-color: transparent;
+    border-top: 4px solid black;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
 `
-const Title = styled.h3`
-    
+const NavArea = styled.div`
+    width: 200px;
+    font-size: 20px;
+`
+const RegLink = styled(Link)`
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
 `
 
-function SideBar() {
+function SideBar({showNav, setShowNav}) {
+    let passiveStyle = {
+        fontWeight: "700",
+    }
+    
     let activeStyle = {
-        textDecoration: "green wavy underline",
+        textDecoration: "underline",
         fontWeight: "900",
     };
 
+    if (!showNav) 
+    return (
+        <Expander onClick={()=>setShowNav(true) }>
+            ▾▾▾
+        </Expander>
+    ) 
+    else 
     return(
-        <Nav>
-            <NavLink to="/dev" style={({ isActive }) => isActive ? activeStyle : undefined } >Web Development</NavLink> <br/>
-            <Link to="/dev" >Lightship</Link>
-            <p>Neighborhood Exchange</p>
+        <NavArea>
+            <NavLink to="/dev" style={({ isActive }) => isActive ? activeStyle : passiveStyle } >Web Development</NavLink>
+            <RegLink to="/dev" >Lightship</RegLink>
+            <RegLink to="/dev" >Neighborhood Exchange</RegLink>
             <br/>
-            <Title><NavLink to="/design" style={({ isActive }) => isActive ? activeStyle : undefined } >Architecture</NavLink></Title>
-            <p>Project A</p>
-            <p>Project B</p>
-            <p>Project C</p>
+            <NavLink to="/design" style={({ isActive }) => isActive ? activeStyle : passiveStyle } >Architecture</NavLink>
+            <RegLink to="/design" >Project A</RegLink>
+            <RegLink to="/design" >Project B</RegLink>
+            <RegLink to="/design" >Project C</RegLink>
             <br/>
-            <NavLink to="/about" style={({ isActive }) => isActive ? activeStyle : undefined } >About</NavLink>
-            <p>Background</p>
-            <p>Experience</p>
+            <NavLink to="/about" style={({ isActive }) => isActive ? activeStyle : passiveStyle } >About</NavLink>
+            <RegLink to="/about" >Background</RegLink>
+            <RegLink to="/about" >Experience</RegLink>
             <br/>
-            <NavLink to="/contact" style={({ isActive }) => isActive ? activeStyle : undefined } >Contact</NavLink>
-            <p>Say Hello</p>
-        </Nav>
+            <NavLink to="/contact" style={({ isActive }) => isActive ? activeStyle : passiveStyle } >Contact</NavLink>
+            <RegLink to="/contact" >Say Hello</RegLink>
+            <br/>
+        </NavArea>
     )
 }
 

@@ -1,7 +1,10 @@
+import styled from "styled-components";
 
 function Design() {
     return(
-        <div>Design</div>
+        <div>
+            Design
+        </div>
     )
 }
 

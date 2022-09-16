@@ -1,7 +1,10 @@
+import styled from "styled-components";
 
 function WebDev() {
     return(
-        <div>WebDev</div>
+        <div>
+            Web Development
+        </div>
     )
 }
 

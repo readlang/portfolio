@@ -9,7 +9,8 @@ const TitleBar = styled.div`
     align-items: flex-start;
     background-color: hsl(0, 0%, 100%);
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 500;
+    font-family: 'Futura', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 `
 const Button = styled.button`
     height: 35px;

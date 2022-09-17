@@ -2,14 +2,17 @@ import styled from "styled-components";
 import { Link, NavLink } from "react-router-dom";
 
 const Expander = styled.button`
-    width: 200px;
+    min-width: 200px;
+    max-width: 400px;
     height: 30px;
     border: 0;
     background-color: transparent;
     border-top: 4px solid black;
     display: flex;
     justify-content: center;
-    font-size: 25px;
+    font-size: 20px;
+    color: hsl(0, 0%, 20%);
+    cursor: pointer;
 `
 const NavArea = styled.div`
     width: 200px;
@@ -34,7 +37,7 @@ function SideBar({showNav, setShowNav}) {
     if (!showNav) 
     return (
         <Expander onClick={()=>setShowNav(true) }>
-            ▾▾▾
+            •••
         </Expander>
     ) 
     else 

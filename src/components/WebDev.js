@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import {Title} from "../styled"
 
 function WebDev() {

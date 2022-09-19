@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import {Title} from "../styled"
 
 function About() {
@@ -28,9 +27,8 @@ function About() {
                 <br/><br/>
                 Working in the design industry for a decade has given me a good sense of usability and functionality, aesthetics, color, and visual clarity. Complicated design and engineering requirements 
                 have been a frequent presence in my architecture experience and are highly analogous to the process of software engineering.
-                
             </p>
-
+            <br/>
         </div>
     )
 }

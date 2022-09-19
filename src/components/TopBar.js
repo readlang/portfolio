@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const TitleBar = styled.div`
     height: 50px;
@@ -28,7 +29,8 @@ const Button = styled.button`
 function TopBar({showNav, setShowNav}) {
     return(
         <TitleBar>
-            Read Langworthy
+            <Link to="/dev" >Read Langworthy </Link>
+            
             <Button onClick={()=> showNav ? setShowNav(false) : setShowNav(true) } >☰</Button>
         </TitleBar>
     )

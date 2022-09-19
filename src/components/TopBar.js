@@ -8,20 +8,20 @@ const TitleBar = styled.div`
     justify-content: space-between;
     align-items: flex-start;
     background-color: hsl(0, 0%, 100%);
-    font-size: 30px;
-    font-weight: 500;
-    font-family: 'Futura', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: 'Source Sans Pro', 'SF Pro Display', 'Futura', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 `
 const Button = styled.button`
     height: 35px;
     width: 35px;
     margin: 0 2px;
-    font-size: 20px;
-    color: hsl(0, 0%, 50%);
+    font-size: 30px;
+    color: hsl(0, 0%, 20%);
     border-radius: 4px;
-    border: 2px solid hsl(0, 0%, 50%);
-    background-color: hsl(0, 0%, 95%);
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    border: 0px solid hsl(0, 0%, 50%);
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.0);
     cursor: pointer;
 `
 

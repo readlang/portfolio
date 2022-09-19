@@ -2,15 +2,17 @@ import styled from "styled-components";
 import { Link, NavLink } from "react-router-dom";
 
 const Expander = styled.button`
-    min-width: 200px;
-    max-width: 400px;
-    height: 30px;
+    width: 50px;
+    
+    height: 15px;
     border: 0;
     background-color: transparent;
-    border-top: 4px solid black;
+    border: 2px solid hsl(0, 0%, 20%);
+    border-radius: 5px;
     display: flex;
     justify-content: center;
-    font-size: 20px;
+    font-size: 15px;
+    line-height: 0.5;
     color: hsl(0, 0%, 20%);
     cursor: pointer;
 `
@@ -32,13 +34,17 @@ function SideBar({showNav, setShowNav}) {
     let activeStyle = {
         textDecoration: "underline",
         fontWeight: "900",
+        color: "#57edd7",
     };
 
     if (!showNav) 
     return (
-        <Expander onClick={()=>setShowNav(true) }>
-            •••
-        </Expander>
+        <>
+            <Expander onClick={()=>setShowNav(true) }>
+                •••
+            </Expander>
+            &nbsp; <br/> &nbsp; <br/> 
+        </>
     ) 
     else 
     return(
@@ -55,10 +61,11 @@ function SideBar({showNav, setShowNav}) {
             <NavLink to="/about" style={({ isActive }) => isActive ? activeStyle : passiveStyle } >About</NavLink>
             <RegLink to="/about" >Background</RegLink>
             <RegLink to="/about" >Experience</RegLink>
+            <RegLink to="/about" >Skills</RegLink>
             <br/>
             <NavLink to="/contact" style={({ isActive }) => isActive ? activeStyle : passiveStyle } >Contact</NavLink>
             <RegLink to="/contact" >Say Hello</RegLink>
-            <br/>
+            <br/><br/><br/>
         </NavArea>
     )
 }

@@ -7,9 +7,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button {
+  font-family: monospace, 'Courier New', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+
+input {
+  font-family: monospace, 'Courier New', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
 }
 
 a:link {
@@ -21,3 +28,15 @@ a:visited {
   color: black;
   text-decoration: none;
 }
+
+
+/*
+blue: #055eff or rgb(5, 94, 255)
+
+pink: #ec3a88 or rgb(236, 58, 136)
+  ff479b  rgb(255, 71, 155)
+
+teal: #57edd7  rgb(87, 237, 215)
+
+yellow: ffff00
+*/

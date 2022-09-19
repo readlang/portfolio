@@ -3,15 +3,19 @@ import {Title} from "../styled"
 
 const Input = styled.input`
     display: block;
-    margin: 0 0 20px;
+    margin: 5px 0 20px;
     height: 30px;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 60%);
 `
 
 const TextArea = styled.textarea`
     display: block;
-    margin: 15px 0;
-    width: 400px;
+    margin: 5px 0 20px;
+    width: 350px;
     height: 200px;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 60%);
 `
 
 const Button = styled.button`
@@ -27,7 +31,8 @@ function Contact() {
             <p>email: </p>
             <p>linkedin: </p>
             <p>github: </p>
-            <br/><br/>
+            <br/><br/><br/>
+
             <Title>Say Hello</Title>
             <br/>
             <form>
@@ -40,7 +45,7 @@ function Contact() {
                 <label>Message:</label>
                 <TextArea placeholder=" your message..."/>
 
-                <Button >send</Button>
+                <Button type="submit" >send</Button>
             </form>
             
         </div>

@@ -29,14 +29,31 @@ a:visited {
   text-decoration: none;
 }
 
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(0, 0%, 74%) hsl(0, 0%, 90%);
+}
+
+/* Chrome */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: hsl(240, 4%, 95%);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: hsl(220, 2%, 74%);
+  border-radius: 20px;
+  border: 3px solid hsl(240, 4%, 95%);
+}
 
 /*
 blue: #055eff or rgb(5, 94, 255)
 
 pink: #ec3a88 or rgb(236, 58, 136)
-  ff479b  rgb(255, 71, 155)
+ff479b  rgb(255, 71, 155)
 
-teal: #57edd7  rgb(87, 237, 215)
-
-yellow: ffff00
 */

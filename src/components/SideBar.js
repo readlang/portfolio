@@ -54,9 +54,11 @@ function SideBar({showNav, setShowNav}) {
             <RegLink to="/dev" >Neighborhood Exchange</RegLink>
             <br/>
             <NavLink to="/design" style={({ isActive }) => isActive ? activeStyle : passiveStyle } >Architecture</NavLink>
-            <RegLink to="/design" >Project A</RegLink>
-            <RegLink to="/design" >Project B</RegLink>
-            <RegLink to="/design" >Project C</RegLink>
+            <RegLink to="/design" >Range</RegLink>
+            <RegLink to="/design" >Basecamp</RegLink>
+            <RegLink to="/design" >La Marina</RegLink>
+            <RegLink to="/design" >Sonoma House</RegLink>
+            <RegLink to="/design" >Webb Pavillion</RegLink>
             <br/>
             <NavLink to="/about" style={({ isActive }) => isActive ? activeStyle : passiveStyle } >About</NavLink>
             <RegLink to="/about" >Background</RegLink>

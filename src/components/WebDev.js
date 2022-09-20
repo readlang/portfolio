@@ -21,6 +21,12 @@ function WebDev() {
             </p>
             <br/>
 
+            <Title> Personal Website </Title>
+            <p>
+                This website was created with React, React Router, and Styled Components. No pre-styled design libraries or themes were used.
+            </p>
+            <br/>
+
         </div>
     )
 }

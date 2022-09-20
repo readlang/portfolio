@@ -16,7 +16,6 @@ export const Container = styled.div`
 `
 
 export const ContentArea = styled.div`
-  //height: 1000px;
   height: ${window.innerHeight - 165}px;
   width: 800px;
   background-color: hsl(0, 0%, 100%);
@@ -28,4 +27,3 @@ export const Title = styled.div`
   font-size: 20px;
   font-weight: bold;
 `
-

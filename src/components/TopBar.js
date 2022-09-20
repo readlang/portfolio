@@ -29,7 +29,7 @@ const Button = styled.button`
 function TopBar({showNav, setShowNav}) {
     return(
         <TitleBar>
-            <Link to="/dev" >Read Langworthy </Link>
+            <Link to="/" >Read Langworthy </Link>
             
             <Button onClick={()=> showNav ? setShowNav(false) : setShowNav(true) } >☰</Button>
         </TitleBar>

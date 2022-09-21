@@ -8,8 +8,8 @@
 # testing
 /coverage
 
-# production
-/build
+# production - commenting out this next line...
+# /build
 
 # misc
 .DS_Store

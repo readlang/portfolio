@@ -23,7 +23,8 @@ function WebDev() {
 
             <Title> Personal Website </Title>
             <p>
-                This website was created with React, React Router, and Styled Components. No pre-styled design libraries or themes were used.
+                This website that you are viewing now was created with React, React Router, and Styled Components. 
+                No pre-styled design libraries or themes were used.
             </p>
             <br/>
 

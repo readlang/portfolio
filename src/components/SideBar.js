@@ -3,15 +3,13 @@ import { Link, NavLink } from "react-router-dom";
 
 const Expander = styled.button`
     width: 50px;
-    
     height: 15px;
-    border: 0;
     background-color: transparent;
     border: 2px solid hsl(0, 0%, 20%);
     border-radius: 5px;
     display: flex;
     justify-content: center;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 0.5;
     color: hsl(0, 0%, 20%);
     cursor: pointer;
@@ -39,12 +37,12 @@ function SideBar({showNav, setShowNav}) {
 
     if (!showNav) 
     return (
-        <>
+        <NavArea>
             <Expander onClick={()=>setShowNav(true) }>
                 •••
             </Expander>
             &nbsp; <br/> &nbsp; <br/> 
-        </>
+        </NavArea>
     ) 
     else 
     return(

@@ -1,21 +1,25 @@
+import { useState } from "react";
 import styled from "styled-components";
 import {Title} from "../styled"
 
 const Input = styled.input`
     display: block;
-    margin: 5px 0 20px;
+    margin: 5px 2px 20px;
     height: 30px;
+    width: 180px;
     border-radius: 5px;
     border: 1px solid hsl(0, 0%, 60%);
+    padding: 0 0 0 5px;
 `
 
 const TextArea = styled.textarea`
     display: block;
-    margin: 5px 0 20px;
+    margin: 5px 2px 20px;
     width: 350px;
     height: 200px;
     border-radius: 5px;
     border: 1px solid hsl(0, 0%, 60%);
+    padding: 5px 0 0 5px;
 `
 
 const Button = styled.button`
@@ -23,31 +27,58 @@ const Button = styled.button`
     width: 60px;
 `
 
-
 function Contact() {
+    const [showForm, setShowForm] = useState(true)
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
+
+    function handleSubmit(event) {
+        event.preventDefault()
+        fetch("https://formspree.io/f/xnqrdjjb", {
+            method: "POST",
+            headers: {'content-type': 'application/json'},
+            body: JSON.stringify({ 
+                name: name,
+                email: email,
+                message: message
+            })
+        })
+        .then(resp => resp.json())
+        .then(data => console.log(data))
+        setShowForm(false)
+    }
+
     return(
         <div>
             <Title>Contact</Title>
-            <p>email: </p>
-            <p>linkedin: </p>
-            <p>github: </p>
+            {/* <p>email: </p> */}
+            <p>Linkedin: <a style={{"textDecoration": "underline"}} href="https://www.linkedin.com/in/read-langworthy-65247519" target="_blank" rel="noreferrer" > 
+                linkedin.com/in/read-langworthy-65247519 </a></p>
+            <p>Github: <a style={{"textDecoration": "underline"}} href="https://github.com/readlang" target="_blank" rel="noreferrer" > github.com/readlang </a></p>
             <br/><br/><br/>
 
             <Title>Say Hello</Title>
             <br/>
-            <form>
-                <label>Name:</label>
-                <Input type="text" placeholder=" your name..."/>
-
-                <label>Email:</label>
-                <Input type="text" placeholder=" your email..."/>
-
-                <label>Message:</label>
-                <TextArea placeholder=" your message..."/>
-
-                <Button type="submit" >send</Button>
-            </form>
-            
+            {showForm ? 
+                <form onSubmit={handleSubmit} >
+                    <label>Name:</label>
+                    <Input type="text" name="name" placeholder="your name..."
+                    value={name} onChange={e=>setName(e.target.value)}
+                    />
+                    <label>Email:</label>
+                    <Input type="email" name="email" placeholder="your email..."
+                    value={email} onChange={e=>setEmail(e.target.value)}
+                    />
+                    <label>Message:</label>
+                    <TextArea name="message" placeholder="your message..."
+                    value={message} onChange={e=>setMessage(e.target.value)}
+                    />
+                    <Button type="submit" >Send</Button>
+                </form>
+            :
+                <p>Thank you for getting in touch!</p>
+            }
         </div>
     )
 }

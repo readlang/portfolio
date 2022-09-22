@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color:hsl(0, 0%, 20%);
 }
 
 button {
@@ -20,12 +21,12 @@ input {
 }
 
 a:link {
-  color: black;
+  color: hsl(0, 0%, 20%);
   text-decoration: none;
 }
 
 a:visited {
-  color: black;
+  color: hsl(0, 0%, 20%);
   text-decoration: none;
 }
 

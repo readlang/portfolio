@@ -19,8 +19,7 @@ export const ContentArea = styled.div`
   height: ${window.innerHeight - 165}px;
   width: 800px;
   background-color: hsl(0, 0%, 100%);
-  overflow-y: auto;
-  scrollbar-width: thin;
+  ${window.innerWidth >= 1020 ? "overflow-y: auto" : null};
 `
 
 export const Title = styled.div`

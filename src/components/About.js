@@ -18,7 +18,9 @@ function About() {
 
             <Title> Experience </Title>
             <p>
-                For the moment, please look around this site, and check out my linkedin and github profiles.  More to come.
+                For the moment, please look around this site, and check out my&nbsp;
+                <a style={{"textDecoration": "underline"}} href="https://www.linkedin.com/in/read-langworthy" target="_blank" rel="noreferrer" >linkedin</a>&nbsp;and&nbsp;
+                <a style={{"textDecoration": "underline"}} href="https://github.com/readlang" target="_blank" rel="noreferrer" >github</a>&nbsp; profiles.  More to come.
             </p>
             <br/>
             

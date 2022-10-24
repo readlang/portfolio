@@ -53,8 +53,8 @@ function Contact() {
         <div>
             <Title>Contact</Title>
             {/* <p>email: </p> */}
-            <p>Linkedin: <a style={{"textDecoration": "underline"}} href="https://www.linkedin.com/in/read-langworthy-65247519" target="_blank" rel="noreferrer" > 
-                linkedin.com/in/read-langworthy-65247519 </a></p>
+            <p>Linkedin: <a style={{"textDecoration": "underline"}} href="https://www.linkedin.com/in/read-langworthy" target="_blank" rel="noreferrer" > 
+                linkedin.com/in/read-langworthy </a></p>
             <p>Github: <a style={{"textDecoration": "underline"}} href="https://github.com/readlang" target="_blank" rel="noreferrer" > github.com/readlang </a></p>
             <br/><br/><br/>
 

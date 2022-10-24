@@ -2,6 +2,7 @@ import {Routes, Route} from "react-router-dom"
 import { useState } from "react"
 import TopBar from './TopBar'
 import SideBar from './SideBar'
+import Introduction from './Introduction'
 import WebDev from './WebDev'
 import Design from './Design'
 import About from './About'
@@ -18,7 +19,7 @@ function App() {
         <SideBar showNav={showNav} setShowNav={setShowNav} />
         <ContentArea>
           <Routes>
-            <Route path="/" element={ <WebDev /> } />
+            <Route path="/" element={ <Introduction /> } />
             <Route path="/dev" element={ <WebDev /> } />
             <Route path="/design" element={ <Design /> } />
             <Route path="/about" element={ <About /> } />

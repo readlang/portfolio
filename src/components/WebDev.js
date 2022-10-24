@@ -14,7 +14,11 @@ function WebDev() {
                 Lightship is a goal tracking and social accountability tool.  Users can set and track goals, and form groups with friends organized around similar goals.  As users track their goals, the progress is shared with the group to keep everyone on target and accountable.  Positive social feedback encourages everyone to stay the course. <br/>
                 Tools: Javascript, React, Redux, React Router, Bootstrap, Styled Components, Ruby on Rails
             </p>            
-            <a style={{"textDecoration": "underline"}} href="https://github.com/readlang/lightship" target="_blank" rel="noreferrer"> github repo </a>
+            <a style={{"textDecoration": "underline"}} href="https://github.com/readlang/lightship" target="_blank" rel="noreferrer"> github repo </a> <br/>
+            <a style={{"textDecoration": "underline"}} href="https://readlang.github.io/lightship-project-video/" target="_blank" rel="noreferrer"> video walkthru </a> <br/>
+            <a style={{"textDecoration": "underline"}} href="https://lightship.herokuapp.com/" target="_blank" rel="noreferrer"> deployed site </a>  <br/>
+            Note: the site is slow to launch on cold-start <br/> due to being hosted on Heroku free-tier.
+            
             <br/><br/><br/>
 
             <Title> Neighborhood Exchange </Title>

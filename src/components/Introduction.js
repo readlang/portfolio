@@ -25,7 +25,7 @@ function Design() {
             <Narrower>
                 <Caption> I recently completed the Flatiron School software engineering bootcamp and am currently looking for a job as a software engineer.  </Caption> 
                 <Caption> I live in Seattle and previously worked in the building industry as an architect and developer.   </Caption> <br />
-                <Caption> Look around and thanks for stopping by!   </Caption>
+                <Caption> Look around and thanks for stopping by! </Caption>
             </Narrower>
         </div>
     )

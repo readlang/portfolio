@@ -6,7 +6,7 @@ function About() {
             <Title> About </Title>
             <p>
                 Hi there, I'm Read. <br/><br/>
-                You are looking at my personal website which shows a few things I've been learning lately.  I recently completed the Flatiron School software engineering bootcamp, where we learned full-stack web development using technologies such as React, Redux, and Ruby on Rails.  At this point I'm looking for a job as a front-end or full-stack engineer, or UX engineer.  I live in Seattle and am interested in local-hybrid or WFH remote work.
+                You are looking at my personal website which shows a few things I've been learning lately.  I recently completed the Flatiron School software engineering bootcamp, where we learned full-stack web development using technologies such as React, Redux, and Ruby on Rails.  At this point I'm looking for a job as a software engineer.  I live in Seattle and am interested in local-hybrid or WFH remote work.
             </p>
             <br/>
 
@@ -26,7 +26,7 @@ function About() {
             
             <Title> Skills </Title>
             <p>
-                Javascript with React, Redux, and React Router. HTML and CSS. Styling with Styled Components and Bootstrap. Backend with Ruby and Rails.
+                Javascript with React, Redux, and React Router. Backend with Ruby on Rails or Node & Express. HTML and CSS. Styling with Styled Components, Bootstrap, or other UI libraries such as Mantine. 
                 <br/><br/>
                 Working in the design industry for a decade has given me a good sense of usability and functionality, aesthetics, color, and visual clarity. Complicated design and engineering requirements have been a frequent presence in my architecture experience and are highly analogous to the process of software engineering.
             </p>

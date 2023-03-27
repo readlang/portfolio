@@ -9,6 +9,27 @@ function WebDev() {
             </p>
             <br/>
 
+            <Title> Focus Interval </Title>
+            <p>
+                Focus Interval is like a task manament app and pomodoro timer mixed together.  It's built with React and Rails and made to look great on mobile or desktop. <br/>
+                Tools: Javascript, React, React Router, Styled Components, Ruby on Rails, PostgreSQL, Fly.io & Netlify, Figma
+
+            </p>            
+            <a style={{"textDecoration": "underline"}} href="https://github.com/readlang/focus-interval" target="_blank" rel="noreferrer"> github repo </a> - has video and images of project <br/>
+            <a style={{"textDecoration": "underline"}} href="https://focus-interval.netlify.app" target="_blank" rel="noreferrer"> deployed site </a>  
+            <br/><br/><br/>
+
+            <Title> EV Specs </Title>
+            <p>
+                In progress... <br/>
+                EV Specs is a tool to make specifications of EVs (Electric Vehicles) easily searchable, sortable, and filterable. Really its a chance to learn Next.js, Typescript, and practice working with messy API data. <br/>
+                Tools: Javascript, Typescript, React, Next.js, APIs
+
+            </p>            
+            <a style={{"textDecoration": "underline"}} href="https://github.com/readlang/evspecs" target="_blank" rel="noreferrer"> github repo </a> <br/>
+            <a style={{"textDecoration": "underline"}} href="https://evspecs.vercel.app/specs" target="_blank" rel="noreferrer"> deployed site </a>  
+            <br/><br/><br/>
+
             <Title> Lightship </Title>
             <p>
                 Lightship is a goal tracking and social accountability tool.  Users can set and track goals, and form groups with friends organized around similar goals.  As users track their goals, the progress is shared with the group to keep everyone on target and accountable.  Positive social feedback encourages everyone to stay the course. <br/>
@@ -18,7 +39,6 @@ function WebDev() {
             <a style={{"textDecoration": "underline"}} href="https://readlang.github.io/lightship-project-video/" target="_blank" rel="noreferrer"> video walkthru </a> <br/>
             <a style={{"textDecoration": "underline"}} href="https://lightship.herokuapp.com/" target="_blank" rel="noreferrer"> deployed site </a>  <br/>
             Note: the site is slow to launch on cold-start <br/> due to being hosted on Heroku free-tier.
-            
             <br/><br/><br/>
 
             <Title> Neighborhood Exchange </Title>

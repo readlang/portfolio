@@ -48,6 +48,8 @@ function SideBar({showNav, setShowNav}) {
     return(
         <NavArea>
             <NavLink to="/dev" style={({ isActive }) => isActive ? activeStyle : passiveStyle } >Web Development</NavLink>
+            <RegLink to="/dev" >Focus Interval</RegLink>
+            <RegLink to="/dev" >EV Specs</RegLink>
             <RegLink to="/dev" >Lightship</RegLink>
             <RegLink to="/dev" >Neighborhood Exchange</RegLink>
             <br/>
